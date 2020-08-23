@@ -1,0 +1,1 @@
+window._CCSettings={platform:"wechatgame",groupList:["default"],collisionMatrix:[[true]],hasResourcesBundle:true,hasStartSceneBundle:false,remoteBundles:[],subpackages:["main"],launchScene:"db://assets/snaker.fire",orientation:"",server:"",jsList:[],bundleVers:{internal:"b444d",img:"12621",resources:"3522b",main:"b6bb5"}};

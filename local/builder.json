@@ -1,0 +1,22 @@
+{
+  "platform": "mini-game",
+  "template": "link",
+  "buildPath": "./build",
+  "debug": false,
+  "sourceMaps": false,
+  "includeEruda": false,
+  "previewWidth": "1280",
+  "previewHeight": "720",
+  "useDebugKeystore": true,
+  "keystorePath": "",
+  "keystorePassword": "",
+  "keystoreAlias": "",
+  "keystoreAliasPassword": "",
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "vsVersion": "auto",
+  "actualPlatform": "wechatgame",
+  "embedWebDebugger": false,
+  "buildScriptsOnly": false
+}

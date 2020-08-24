@@ -17,14 +17,39 @@ cc.Class({
     this._game = cc.find("/Canvas/box").getComponent("build");
   },
   onBeginContact: function onBeginContact(contact, selfCollider, otherCollider) {
-    console.log("onBeginContact");
+    cc.log("onBeginContact");
   },
   onCollisionEnter: function onCollisionEnter(other, self) {
-    //console.log("碰撞2  =" + this.node.x + " x=" + other.node.x);
-    if (Math.abs(this.node.x - other.node.x) == 48 && Math.abs(this.node.y - other.node.y) == 0) {
-      this._game.gameOver();
-    } else if (Math.abs(this.node.x - other.node.x) == 0 && Math.abs(this.node.y - other.node.y) == 48) {
-      this._game.gameOver();
+    // cc.log("碰撞x  =" + this.node.x + " x=" + other.node.x);
+    // cc.log("碰撞y  =" + this.node.y + " x=" + other.node.y);
+    // cc.log("方向 =" + this._game.direction);
+    // this._game.gameOver();
+    // if(Math.abs(this.node.x - other.node.x)==48 && Math.abs(this.node.y - other.node.y)==48){
+    //     this._game.gameOver();
+    // }
+    // else if(Math.abs(this.node.x - other.node.x)==0 && Math.abs(this.node.y - other.node.y)==48){
+    //     this._game.gameOver();
+    // }
+    if (this._game.direction === 0) {
+      if (this.node.x == other.node.x && this.node.y == other.node.y + 48) {
+        this._game.gameOver();
+      } //cc.log("up");
+
+    } else if (this._game.direction === 1) {
+      if (this.node.x == other.node.x && this.node.y == other.node.y - 48) {
+        this._game.gameOver();
+      } // cc.log("down");
+
+    } else if (this._game.direction === 2) {
+      if (this.node.x == other.node.x - 48 && this.node.y == other.node.y) {
+        this._game.gameOver();
+      } //cc.log("left");
+
+    } else if (this._game.direction === 3) {
+      if (this.node.x == other.node.x + 48 && this.node.y == other.node.y) {
+        this._game.gameOver();
+      } //cc.log("right");
+
     }
   } // update (dt) {},
 

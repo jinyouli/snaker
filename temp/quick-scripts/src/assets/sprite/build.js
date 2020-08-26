@@ -214,6 +214,7 @@ cc.Class({
 
 
     this.snakeBody = cc.instantiate(this.prefab).getComponent('rect');
+    this.snakeBody.node.Group = 'target';
     var box = cc.find('Canvas/box');
     box.addChild(this.snakeBody.node);
     this.snakeBody.node.x = this.goalX * 48;
@@ -383,11 +384,22 @@ cc.Class({
     if (x < 0 || x >= 480 || y < 0 || y >= 720) {
       this.gameOver();
       return;
+    }
+
+    for (var i = 0; i < this.nodes.length; i++) {
+      cc.log("nodes =" + this.nodes[i]);
+
+      if (this.nodes[i].Group != 'target') {
+        if (this.nodes[i].x == x && this.nodes[i].y == y) {
+          this.gameOver();
+          return;
+        }
+      }
     } //判断是否碰撞到贪吃蛇身体
 
 
-    for (var i = 0; i < this.snakeArrX.length; i++) {
-      if (this.snakeArrX[i] == x && this.snakeArrY[i] == y) {
+    for (var _i = 0; _i < this.snakeArrX.length; _i++) {
+      if (this.snakeArrX[_i] == x && this.snakeArrY[_i] == y) {
         this.gameOver();
         return;
       }

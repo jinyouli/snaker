@@ -115,8 +115,8 @@
     "relativePath": "migration\\use_v2.0.x_cc.Toggle_event.js"
   },
   "7ea488a8-cc8d-4be7-88b7-513ef8e25652": {
-    "asset": 1598238057772,
-    "meta": 1598262216706,
+    "asset": 1598445322585,
+    "meta": 1598445322609,
     "relativePath": "snaker.fire"
   },
   "9836134e-b892-4283-b6b2-78b5acf3ed45": {
@@ -619,14 +619,14 @@
     "meta": 1598262210398,
     "relativePath": "resources\\materials\\builtin-unlit.mtl"
   },
-  "0d94fbef-2316-4536-8817-9c161d8f1feb": {
-    "asset": 1598238057775,
-    "meta": 1598262216610,
-    "relativePath": "sprite\\build.js"
-  },
   "20127710-499f-4dd1-b07c-69f9bc2048d8": {
-    "asset": 1598272821523,
-    "meta": 1598272825291,
+    "asset": 1598444263567,
+    "meta": 1598444297695,
     "relativePath": "sprite\\rect.js"
+  },
+  "0d94fbef-2316-4536-8817-9c161d8f1feb": {
+    "asset": 1598445090353,
+    "meta": 1598445098079,
+    "relativePath": "sprite\\build.js"
   }
 }

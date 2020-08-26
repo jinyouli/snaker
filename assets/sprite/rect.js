@@ -21,10 +21,10 @@ cc.Class({
     },
 
     onCollisionEnter(other, self) {
-        // cc.log("碰撞x  =" + this.node.x + " x=" + other.node.x);
+         //cc.log("碰撞x  =" + this.node.x + " x=" + other.node.x);
         // cc.log("碰撞y  =" + this.node.y + " x=" + other.node.y);
 
-        // cc.log("方向 =" + this._game.direction);
+        
         
         // this._game.gameOver();
 
@@ -35,32 +35,34 @@ cc.Class({
         //     this._game.gameOver();
         // }
 
-        if(this._game.direction===0){
+        // if(this._game.direction===0){
 
-            if(this.node.x == other.node.x && this.node.y == other.node.y + 48){
-                this._game.gameOver();
-            }
+        //     if(this.node.x == other.node.x && this.node.y == other.node.y + 48){
+        //         this._game.gameOver();
+        //     }
 
-            //cc.log("up");
-        }else if(this._game.direction===1){
+        //     cc.log("up");
+        // }else if(this._game.direction===1){
 
-            if(this.node.x == other.node.x && this.node.y == other.node.y - 48){
-                this._game.gameOver();
-            }
-           // cc.log("down");
-        }else if(this._game.direction===2){
+        //     if(this.node.x == other.node.x && this.node.y == other.node.y - 48){
+        //         this._game.gameOver();
+        //     }
+        //     cc.log("down");
+        // }else if(this._game.direction===2){
 
-            if(this.node.x == other.node.x -48 && this.node.y == other.node.y){
-                this._game.gameOver();
-            }
-            //cc.log("left");
-        }else if(this._game.direction===3){
-            if(this.node.x == other.node.x + 48 && this.node.y == other.node.y){
-                this._game.gameOver();
-            }
-            //cc.log("right");
-        }
+        //     if(this.node.x == other.node.x -48 && this.node.y == other.node.y){
+        //         this._game.gameOver();
+        //     }
+        //     cc.log("left");
+        // }else if(this._game.direction===3){
+        //     if(this.node.x == other.node.x + 48 && this.node.y == other.node.y){
+        //         this._game.gameOver();
+        //     }
+        //     cc.log("right");
+        // }
     },
 
-    // update (dt) {},
+    update (dt) {
+        //cc.log("方向 =" + this._game.direction);
+    },
 });

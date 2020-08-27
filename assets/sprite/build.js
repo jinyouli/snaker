@@ -1,3 +1,7 @@
+import JoystickEnum from "./joystick/JoystickEnum";
+import JoystickEvent from "./joystick/JoystickEvent";
+
+
 cc.Class({
     extends: cc.Component,
 
@@ -10,6 +14,20 @@ cc.Class({
         rect5:cc.Prefab,
         rect6:cc.Prefab,
         rect7:cc.Prefab,
+
+
+    // from joystick
+    moveDir: {
+        default: cc.v2(0, 1),
+        displayName: 'Move Dir',
+        tooltip: '移动方向',
+    },
+    _speedType: {
+        default: JoystickEnum.SpeedType.STOP,
+        displayName: 'Speed Type',
+        type: JoystickEnum.SpeedType,
+        tooltip: '速度级别'
+    },
        //播放预制资源
        player:cc.Prefab,
        basepoint:cc.Prefab,
@@ -32,6 +50,10 @@ cc.Class({
     onLoad () {
         cc.log("onload start");
 
+        JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_START, this.onTouchStart, this);
+        JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_MOVE, this.onTouchMove, this);
+        JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_END, this.onTouchEnd, this);
+
         var collider = cc.director.getCollisionManager();
         collider.enabled = true;
         // collider.enabledDebugDraw = true;
@@ -44,7 +66,7 @@ cc.Class({
         var db = cc.PhysicsManager.DrawBits;
 
         this.nodes = [];
-        this.nodes = cc.find('Canvas/box').children;
+        this.nodes = cc.find('Canvas/box/nodes').children;
 
         //游戏状态  0-暂停 1-运行 2-游戏结束 
         this.gameState = 1;
@@ -146,6 +168,20 @@ cc.Class({
         },this);
 
     },
+
+    onTouchStart() {
+
+    },
+
+    onTouchMove(event, data) {
+        this._speedType = data.speedType;
+        this.moveDir = data.moveDistance;
+        cc.log("this.moveDir =" + this.moveDir);
+    },
+
+    onTouchEnd(event, data) {
+        this._speedType = data.speedType;
+    },
     //
     setGame(){
         cc.log("setGame start");
@@ -186,6 +222,7 @@ cc.Class({
     //生成果实
     produceFoot(){
         this.nextGoal = Math.floor(7*Math.random());
+        this.nextGoal = 4;
         //随机生成某种颜色
          if(this.nextGoal===0){this.prefab=this.rect0;}
          if(this.nextGoal===1){this.prefab=this.rect1;}

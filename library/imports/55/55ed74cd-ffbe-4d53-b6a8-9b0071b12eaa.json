@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "plane-line-alpha",
+    "texture": "e9e99c8c-6b8f-4bcb-863c-320ff97bc8d6",
+    "atlas": "",
+    "rect": [
+      29,
+      12,
+      142,
+      176
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

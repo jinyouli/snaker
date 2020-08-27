@@ -4,6 +4,12 @@ cc._RF.push(module, '0d94fvvIxZFNogXnBYdjx/r', 'build');
 
 "use strict";
 
+var _JoystickEnum = _interopRequireDefault(require("./joystick/JoystickEnum"));
+
+var _JoystickEvent = _interopRequireDefault(require("./joystick/JoystickEvent"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
 cc.Class({
   "extends": cc.Component,
   properties: {
@@ -15,6 +21,18 @@ cc.Class({
     rect5: cc.Prefab,
     rect6: cc.Prefab,
     rect7: cc.Prefab,
+    // from joystick
+    moveDir: {
+      "default": cc.v2(0, 1),
+      displayName: 'Move Dir',
+      tooltip: '移动方向'
+    },
+    _speedType: {
+      "default": _JoystickEnum["default"].SpeedType.STOP,
+      displayName: 'Speed Type',
+      type: _JoystickEnum["default"].SpeedType,
+      tooltip: '速度级别'
+    },
     //播放预制资源
     player: cc.Prefab,
     basepoint: cc.Prefab,
@@ -34,6 +52,13 @@ cc.Class({
   // LIFE-CYCLE CALLBACKS:
   onLoad: function onLoad() {
     cc.log("onload start");
+
+    _JoystickEvent["default"].getInstance().on(_JoystickEnum["default"].JoystickEventType.TOUCH_START, this.onTouchStart, this);
+
+    _JoystickEvent["default"].getInstance().on(_JoystickEnum["default"].JoystickEventType.TOUCH_MOVE, this.onTouchMove, this);
+
+    _JoystickEvent["default"].getInstance().on(_JoystickEnum["default"].JoystickEventType.TOUCH_END, this.onTouchEnd, this);
+
     var collider = cc.director.getCollisionManager();
     collider.enabled = true; // collider.enabledDebugDraw = true;
     // collider.enabledDrawBoundingBox = true;
@@ -44,7 +69,7 @@ cc.Class({
 
     var db = cc.PhysicsManager.DrawBits;
     this.nodes = [];
-    this.nodes = cc.find('Canvas/box').children; //游戏状态  0-暂停 1-运行 2-游戏结束 
+    this.nodes = cc.find('Canvas/box/nodes').children; //游戏状态  0-暂停 1-运行 2-游戏结束 
 
     this.gameState = 1;
     cc.director.getCollisionManager().enabled = true;
@@ -146,6 +171,15 @@ cc.Class({
       }
     }, this);
   },
+  onTouchStart: function onTouchStart() {},
+  onTouchMove: function onTouchMove(event, data) {
+    this._speedType = data.speedType;
+    this.moveDir = data.moveDistance;
+    cc.log("this.moveDir =" + this.moveDir);
+  },
+  onTouchEnd: function onTouchEnd(event, data) {
+    this._speedType = data.speedType;
+  },
   //
   setGame: function setGame() {
     cc.log("setGame start"); //下个果实方块
@@ -182,7 +216,8 @@ cc.Class({
   },
   //生成果实
   produceFoot: function produceFoot() {
-    this.nextGoal = Math.floor(7 * Math.random()); //随机生成某种颜色
+    this.nextGoal = Math.floor(7 * Math.random());
+    this.nextGoal = 4; //随机生成某种颜色
 
     if (this.nextGoal === 0) {
       this.prefab = this.rect0;

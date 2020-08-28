@@ -15,6 +15,7 @@ cc.Class({
         rect6:cc.Prefab,
         rect7:cc.Prefab,
 
+        cba:{default:null,type:cc.SpriteFrame},
 
     // from joystick
     moveDir: {
@@ -217,6 +218,13 @@ cc.Class({
                 break;
             }
         }
+
+        for(let i=0; i<this.nodes.length; i++){
+            if(this.nodes[i].x==this.goalX * 48 && this.nodes[i].y==this.goalY * 48){
+                this.overlapFoot();
+                break;
+            }
+        }
         this.produceFoot();
     },
     //生成果实
@@ -254,6 +262,9 @@ cc.Class({
             var len = this.snakeArrX.length;
             this.snakeArrX[len]=this.snakeBody.node.x;
             this.snakeArrY[len]=this.snakeBody.node.y;
+            
+            // let sprite = this.snakeBody.getComponent(cc.Sprite)
+            // sprite.spriteFrame = new cc.SpriteFrame(cc.url.raw('assets/img/5.png'));
             this.snakeArr[len]=this.snakeBody;
             //果实被吃了 
             this.boxMap[boxMapX][boxMapY]=0;
@@ -283,6 +294,7 @@ cc.Class({
             this.isGameOver(this.snakeHead.node.x,this.snakeHead.node.y+48);
             if(this.gameState===1){
                 this.snakeHead.node.y+=48; 
+                this.snakeHead.node.rotation = 0;
             }
             //cc.log("up");
         }else if(this.direction===1){
@@ -291,6 +303,7 @@ cc.Class({
                
             if(this.gameState===1){
                 this.snakeHead.node.y-=48;
+                this.snakeHead.node.rotation = 180;
             }
            // cc.log("down");
         }else if(this.direction===2){
@@ -298,6 +311,7 @@ cc.Class({
             
             if(this.gameState===1){
                 this.snakeHead.node.x-=48;
+                this.snakeHead.node.rotation = 270;
             }
             //cc.log("left");
         }else if(this.direction===3){
@@ -306,6 +320,7 @@ cc.Class({
              
             if(this.gameState===1){
                 this.snakeHead.node.x+=48;
+                this.snakeHead.node.rotation = 90;
             }
             //cc.log("right");
         }

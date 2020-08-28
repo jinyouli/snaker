@@ -40,8 +40,8 @@
     "relativePath": "img\\3.png"
   },
   "fdc8fa6f-fd8a-4676-9b66-c569e3c61538": {
-    "asset": 1598238057747,
-    "meta": 1598262216079,
+    "asset": 1598611985413,
+    "meta": 1598612152717,
     "relativePath": "img\\4.png"
   },
   "251b00cb-c1ed-4b94-bd43-9a31a495cd39": {
@@ -90,8 +90,8 @@
     "relativePath": "prefab\\rect6.prefab"
   },
   "b34bd05e-427e-4569-8446-736577e40ad2": {
-    "asset": 1598262216254,
-    "meta": 1598262216256,
+    "asset": 1598616072136,
+    "meta": 1598616072142,
     "relativePath": "prefab\\rect7.prefab"
   },
   "8ad86cf7-cab9-47fe-af44-4fe97048d497": {
@@ -660,8 +660,8 @@
     "relativePath": "sprite\\joystick\\JoystickEvent.js"
   },
   "0d94fbef-2316-4536-8817-9c161d8f1feb": {
-    "asset": 1598532541271,
-    "meta": 1598532544814,
+    "asset": 1598617689846,
+    "meta": 1598617693918,
     "relativePath": "sprite\\build.js"
   }
 }

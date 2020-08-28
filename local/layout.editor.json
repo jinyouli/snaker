@@ -20,7 +20,7 @@
                     "children": [
                       "hierarchy"
                     ],
-                    "height": 309.75,
+                    "height": 308.75,
                     "type": "panel",
                     "width": 325
                   },
@@ -29,7 +29,7 @@
                     "children": [
                       "assets"
                     ],
-                    "height": 310.75,
+                    "height": 311.75,
                     "type": "panel",
                     "width": 325
                   }
@@ -48,7 +48,7 @@
                 "width": 642
               },
               {
-                "active": 0,
+                "active": 1,
                 "children": [
                   "inspector",
                   "builder"
@@ -72,7 +72,8 @@
         "inspector",
         "builder"
       ]
-    }
+    },
+    "worker": {}
   },
   "panels": {
     "sprite-editor": {

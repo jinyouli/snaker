@@ -1,0 +1,447 @@
+2020-08-28T12:36:30.413Z - normal: Load ~/.CocosCreator/settings.json
+2020-08-28T12:36:30.753Z - normal: Initializing Asset Database
+2020-08-28T12:36:30.758Z - normal: checking language setting...
+2020-08-28T12:36:30.759Z - normal: Language: zh
+2020-08-28T12:36:55.563Z - success: protocol editor-framework registered
+2020-08-28T12:36:55.564Z - success: protocol app registered
+2020-08-28T12:36:55.564Z - success: protocol theme registered
+2020-08-28T12:36:55.564Z - success: protocol packages registered
+2020-08-28T12:36:55.564Z - success: protocol uuid registerred
+2020-08-28T12:36:55.564Z - success: protocol db registerred
+2020-08-28T12:36:55.565Z - success: protocol thumbnail registerred
+2020-08-28T12:36:55.565Z - success: protocol unpack registerred
+2020-08-28T12:36:55.565Z - success: protocol disable-commonjs registerred
+2020-08-28T12:36:55.793Z - normal: connected!
+2020-08-28T12:36:55.796Z - normal: Check project E:\snaker
+2020-08-28T12:36:55.801Z - normal: Initializing project E:\snaker
+2020-08-28T12:37:02.410Z - success: adapters loaded
+2020-08-28T12:37:02.495Z - success: asset-db-debugger loaded
+2020-08-28T12:37:03.846Z - success: fb-audience-network loaded
+2020-08-28T12:37:04.115Z - success: fb-live-stream loaded
+2020-08-28T12:37:04.149Z - success: google-play-instant loaded
+2020-08-28T12:37:04.150Z - success: jsb-adapter loaded
+2020-08-28T12:37:04.241Z - success: package-manager loaded
+2020-08-28T12:37:04.242Z - success: runtime-adapters loaded
+2020-08-28T12:37:04.308Z - success: runtime-dev-tools loaded
+2020-08-28T12:37:04.326Z - success: ui-kit-preview-extra loaded
+2020-08-28T12:37:04.370Z - success: ui-kit-preview loaded
+2020-08-28T12:37:05.113Z - success: alipay-minigame loaded
+2020-08-28T12:37:05.400Z - success: assets loaded
+2020-08-28T12:37:05.425Z - success: baidugame-opendata loaded
+2020-08-28T12:37:05.432Z - success: baidugame loaded
+2020-08-28T12:37:05.473Z - success: builder loaded
+2020-08-28T12:37:05.480Z - success: bytedance-opendata loaded
+2020-08-28T12:37:05.564Z - success: bytedance loaded
+2020-08-28T12:37:05.637Z - success: channel-upload-tools loaded
+2020-08-28T12:37:05.687Z - success: cloud-function loaded
+2020-08-28T12:37:08.381Z - success: cocos-services loaded
+2020-08-28T12:37:08.391Z - success: console loaded
+2020-08-28T12:37:08.396Z - success: curve-editor loaded
+2020-08-28T12:37:08.419Z - success: fb-instant-games loaded
+2020-08-28T12:37:08.425Z - success: game-window loaded
+2020-08-28T12:37:08.426Z - success: google-instant-games loaded
+2020-08-28T12:37:08.432Z - success: hierarchy loaded
+2020-08-28T12:37:08.436Z - success: huawei-agc loaded
+2020-08-28T12:37:08.443Z - success: huawei-runtime loaded
+2020-08-28T12:37:08.502Z - success: inspector loaded
+2020-08-28T12:37:08.525Z - success: cpk-publish loaded
+2020-08-28T12:37:08.526Z - success: keystore loaded
+2020-08-28T12:37:08.551Z - success: link-sure-runtime loaded
+2020-08-28T12:37:08.567Z - success: node-library loaded
+2020-08-28T12:37:08.568Z - success: open-recent-items loaded
+2020-08-28T12:37:08.573Z - success: oppo-runtime loaded
+2020-08-28T12:37:08.577Z - success: package-asset loaded
+2020-08-28T12:37:08.578Z - success: preferences loaded
+2020-08-28T12:37:08.608Z - success: project-importer loaded
+2020-08-28T12:37:08.610Z - success: project-settings loaded
+2020-08-28T12:37:08.645Z - success: qtt-runtime loaded
+2020-08-28T12:37:08.651Z - success: scene loaded
+2020-08-28T12:37:08.653Z - success: simulator-debugger loaded
+2020-08-28T12:37:08.654Z - success: sprite-editor loaded
+2020-08-28T12:37:09.344Z - success: store loaded
+2020-08-28T12:37:09.376Z - success: timeline loaded
+2020-08-28T12:37:09.385Z - success: vivo-runtime loaded
+2020-08-28T12:37:09.389Z - success: wechatgame-opendata loaded
+2020-08-28T12:37:09.422Z - success: wechatgame loaded
+2020-08-28T12:37:09.428Z - success: xiaomi-runtime loaded
+2020-08-28T12:37:12.759Z - success: im-plugin loaded
+2020-08-28T12:37:12.786Z - success: preview server running at http://localhost:7456
+2020-08-28T12:37:15.859Z - info: Cocos Service load base data!
+2020-08-28T12:37:18.028Z - normal: Initializing Cocos2d
+2020-08-28T12:37:23.344Z - normal: Initializing engine extends
+2020-08-28T12:37:31.053Z - normal: Loading packages
+2020-08-28T12:37:31.064Z - normal: Watching packages
+2020-08-28T12:37:31.167Z - normal: Run Application
+2020-08-28T12:37:59.133Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
+2020-08-28T12:37:59.134Z - normal: Simulator: WORKAREA WIDTH 1358.00, HEIGHT 677.00
+2020-08-28T12:37:59.134Z - normal: Simulator: FRAME SCALE = 0.50
+2020-08-28T12:37:59.466Z - normal: Simulator: Ready for GLSL
+2020-08-28T12:37:59.467Z - normal: Simulator: Ready for OpenGL 2.0
+2020-08-28T12:37:59.470Z - normal: Simulator: Project Config:
+2020-08-28T12:37:59.472Z - normal: Simulator:     project dir: D:\programs\CocosDashboard\resources\.editors\Creator\2.4.2\resources\cocos2d-x\simulator\win32\
+2020-08-28T12:37:59.473Z - normal: Simulator:     writable path: $(PROJDIR)\
+2020-08-28T12:37:59.474Z - normal: Simulator:     script file: $(PROJDIR)\main.js
+2020-08-28T12:37:59.475Z - normal: Simulator:     frame size: 750 x 1334
+2020-08-28T12:37:59.475Z - normal: Simulator:     frame scale: 0.50
+2020-08-28T12:37:59.478Z - normal: Simulator:     show console: NO
+2020-08-28T12:37:59.483Z - normal: Simulator:     write debug log: NO ()
+2020-08-28T12:37:59.489Z - normal: Simulator:     listen: 
+2020-08-28T12:37:59.490Z - normal: Simulator:     debugger: none
+2020-08-28T12:37:59.491Z - normal: Simulator:     add searching path:
+2020-08-28T12:37:59.492Z - normal: Simulator: 
+2020-08-28T12:37:59.492Z - normal: Simulator: 
+2020-08-28T12:37:59.494Z - normal: Simulator: 
+2020-08-28T12:37:59.495Z - normal: Simulator: resetDesignResolution request
+2020-08-28T12:37:59.496Z - normal: Simulator: ------------------------------------------------
+2020-08-28T12:37:59.497Z - normal: Simulator: LOAD Js FILE: jsb-adapter/jsb-builtin.js
+2020-08-28T12:37:59.498Z - normal: Simulator: ------------------------------------------------
+2020-08-28T12:37:59.498Z - normal: Simulator: D/jswrapper (380): Initializing V8, version: 8.0.426.16
+2020-08-28T12:37:59.500Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
+2020-08-28T12:37:59.501Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ devtools://devtools/bundled/js_app.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
+2020-08-28T12:37:59.502Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
+2020-08-28T12:37:59.567Z - normal: Simulator: D/jswrapper (132): JS: Enable batch GL commands optimization!
+2020-08-28T12:37:59.572Z - normal: Simulator: resetDesignResolution request
+2020-08-28T12:37:59.575Z - normal: Simulator: ------------------------------------------------
+2020-08-28T12:37:59.576Z - normal: Simulator: LOAD Js FILE: main.js
+2020-08-28T12:37:59.579Z - normal: Simulator: ------------------------------------------------
+2020-08-28T12:38:00.711Z - normal: Simulator: D/jswrapper (132): JS: Read json failed: Unexpected end of JSON input
+2020-08-28T12:38:00.830Z - normal: Simulator: iShow!
+2020-08-28T12:38:00.942Z - normal: Simulator: D/jswrapper (132): JS: load __quick_compile_project__: 60.269000000000005ms
+2020-08-28T12:38:01.736Z - normal: Simulator: D/renderer (616): Device caps: maxVextexTextures: 16, maxFragUniforms: 256, maxTextureUints: 16, maxVertexAttributes: 16, maxDrawBuffers: 8, maxColorAttatchments: 8
+2020-08-28T12:38:01.736Z - normal: Simulator: D/jswrapper (132): JS: Cocos Creator v2.4.2
+2020-08-28T12:38:01.927Z - normal: Simulator: D/jswrapper (132): JS: onload start
+2020-08-28T12:38:02.001Z - normal: Simulator: D/jswrapper (132): JS: setGame start
+2020-08-28T12:38:02.001Z - normal: Simulator: D/jswrapper (132): JS: goal:6
+2020-08-28T12:38:02.005Z - normal: Simulator: D/jswrapper (132): JS: goal2:6
+2020-08-28T12:38:02.006Z - normal: Simulator: D/jswrapper (132): JS: setGame end
+2020-08-28T12:38:02.455Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.456Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.456Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.457Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.487Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.490Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.490Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.490Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.491Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.491Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.492Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.492Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:02.492Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:03.199Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.200Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.201Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.202Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.203Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.203Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.204Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.208Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.209Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.210Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.210Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.210Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.211Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:03.697Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.698Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.698Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.699Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.700Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.701Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.701Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.702Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.702Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.703Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.703Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.703Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:03.704Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:04.199Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.200Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.200Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.201Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.201Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.202Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.203Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.204Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.204Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.205Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.206Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.207Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.208Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:04.700Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.701Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.701Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.702Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.702Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.703Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.703Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.704Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.704Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.704Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.705Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.706Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:04.706Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:05.201Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.202Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.203Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.203Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.204Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.204Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.205Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.206Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.206Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.206Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.207Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.208Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.210Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:05.705Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.706Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.706Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.707Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.708Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.709Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.711Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.711Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.712Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.713Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.713Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.714Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:05.715Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:06.207Z - normal: Simulator: D/jswrapper (132): JS: 结束
+2020-08-28T12:38:08.779Z - normal: Simulator: D/jswrapper (132): JS: LoadScene snaker: 8.977999999999156ms
+2020-08-28T12:38:08.853Z - normal: Simulator: D/jswrapper (132): JS: onload start
+2020-08-28T12:38:08.864Z - normal: Simulator: D/jswrapper (132): JS: setGame start
+2020-08-28T12:38:08.865Z - normal: Simulator: D/jswrapper (132): JS: goal:6
+2020-08-28T12:38:08.867Z - normal: Simulator: D/jswrapper (132): JS: goal2:6
+2020-08-28T12:38:08.868Z - normal: Simulator: D/jswrapper (132): JS: setGame end
+2020-08-28T12:38:09.295Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.296Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.297Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.298Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.298Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.299Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.299Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.299Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.300Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.301Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.301Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.302Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.302Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:09.803Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.804Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.805Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.805Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.806Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.806Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.806Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.807Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.807Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.808Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.808Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.808Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:09.810Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:10.317Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.318Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.318Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.319Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.320Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.320Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.321Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.321Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.322Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.323Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.324Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.324Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.324Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:10.834Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.834Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.835Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.838Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.839Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.839Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.841Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.841Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.842Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.842Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.843Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.843Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:10.844Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:11.348Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.349Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.349Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.350Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.350Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.350Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.351Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.351Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.353Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.354Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.354Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.355Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.355Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:11.859Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.859Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.860Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.861Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.861Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.861Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.862Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.862Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.863Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.863Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.863Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.864Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:11.864Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:12.359Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.360Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.361Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.362Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.362Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.364Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.364Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.366Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.366Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.367Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.368Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.369Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.369Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:12.862Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.863Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.863Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.864Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.865Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.865Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.865Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.866Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.867Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.867Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.868Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.868Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:12.870Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:13.362Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.363Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.364Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.365Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.365Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.367Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.368Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.368Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.369Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.370Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.370Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.370Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.371Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:13.869Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.870Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.871Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.871Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.872Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.872Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.872Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.873Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.873Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.874Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.874Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.874Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:13.875Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:14.373Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.374Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.375Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.377Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.378Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.379Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.379Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.380Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.380Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.383Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.384Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.385Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:14.386Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:14.874Z - normal: Simulator: D/jswrapper (132): JS: 结束
+2020-08-28T12:38:18.635Z - normal: Simulator: D/jswrapper (132): JS: LoadScene snaker: 9.808000000000902ms
+2020-08-28T12:38:18.667Z - normal: Simulator: D/jswrapper (132): JS: onload start
+2020-08-28T12:38:18.679Z - normal: Simulator: D/jswrapper (132): JS: setGame start
+2020-08-28T12:38:18.680Z - normal: Simulator: D/jswrapper (132): JS: goal:5
+2020-08-28T12:38:18.684Z - normal: Simulator: D/jswrapper (132): JS: goal2:5
+2020-08-28T12:38:18.685Z - normal: Simulator: D/jswrapper (132): JS: setGame end
+2020-08-28T12:38:19.232Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.232Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.233Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.233Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.234Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.234Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.235Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.236Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.236Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.237Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.237Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.238Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.238Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:19.729Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.730Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.731Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.731Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.731Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.732Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.733Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.733Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.733Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.734Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.735Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.735Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:19.736Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:20.230Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.231Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.231Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.232Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.233Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.233Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.233Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.234Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.234Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.235Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.235Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.236Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.236Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:20.732Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.732Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.733Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.733Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.735Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.735Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.735Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.736Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.736Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.736Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.738Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.738Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:20.739Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:21.234Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.234Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.235Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.235Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.236Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.236Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.237Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.237Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.237Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.238Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.238Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.239Z - normal: Simulator: D/jswrapper (132): JS: nodes =[object Object]
+2020-08-28T12:38:21.240Z - normal: Simulator: D/jswrapper (132): JS: [WARN]: `cc.Node.rotation` is deprecated since v2.1.0, please set `-angle` instead. (`this.node.rotation = x` -> `this.node.angle = -x`)
+2020-08-28T12:38:21.617Z - normal: Simulator: D/jswrapper (473): ScriptEngine::cleanup begin ...
+2020-08-28T12:38:21.617Z - normal: Simulator: D/jswrapper (613): GC begin ..., (js->native map) size: 399, all objects: 918
+2020-08-28T12:38:21.867Z - normal: Simulator: D/jswrapper (631): GC end ..., (js->native map) size: 188, all objects: 509
+2020-08-28T12:38:21.868Z - normal: Simulator: D/jswrapper (613): GC begin ..., (js->native map) size: 188, all objects: 509
+2020-08-28T12:38:21.879Z - normal: Simulator: D/jswrapper (631): GC end ..., (js->native map) size: 188, all objects: 509
+2020-08-28T12:38:22.030Z - normal: Simulator: D/jswrapper (613): GC begin ..., (js->native map) size: 0, all objects: -1
+2020-08-28T12:38:22.030Z - normal: Simulator: D/jswrapper (532): Function object is released!
+2020-08-28T12:38:22.031Z - normal: Simulator: D/jswrapper (631): GC end ..., (js->native map) size: 0, all objects: -1
+2020-08-28T12:38:22.185Z - normal: Simulator: D/jswrapper (534): ScriptEngine::cleanup end ...
+2020-08-28T12:38:23.787Z - warn: Simulator: libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: cHRM chunk does not match sRGB
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile

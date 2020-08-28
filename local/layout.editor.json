@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": -8,
-      "y": -8,
-      "width": 1382,
-      "height": 744,
+      "x": 0,
+      "y": 0,
+      "width": 1366,
+      "height": 728,
       "layout": {
         "children": [
           {
@@ -20,32 +20,32 @@
                     "children": [
                       "hierarchy"
                     ],
-                    "height": 308.75,
+                    "height": 302.03125,
                     "type": "panel",
-                    "width": 325
+                    "width": 321.171875
                   },
                   {
                     "active": 0,
                     "children": [
                       "assets"
                     ],
-                    "height": 311.75,
+                    "height": 304.96875,
                     "type": "panel",
-                    "width": 325
+                    "width": 321.171875
                   }
                 ],
-                "height": 623.5,
+                "height": 610,
                 "type": "dock-v",
-                "width": 325
+                "width": 321.171875
               },
               {
                 "active": 0,
                 "children": [
                   "scene"
                 ],
-                "height": 623.5,
+                "height": 610,
                 "type": "panel",
-                "width": 642
+                "width": 634.453125
               },
               {
                 "active": 0,
@@ -53,14 +53,14 @@
                   "inspector",
                   "builder"
                 ],
-                "height": 623.5,
+                "height": 610,
                 "type": "panel",
-                "width": 393
+                "width": 388.375
               }
             ],
-            "height": 623.5,
+            "height": 610,
             "type": "dock-h",
-            "width": 1366
+            "width": 1350
           }
         ],
         "type": "dock-v"

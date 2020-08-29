@@ -15,7 +15,8 @@ cc.Class({
         rect6:cc.Prefab,
         rect7:cc.Prefab,
 
-        cba:{default:null,type:cc.SpriteFrame},
+    cba:{default:null,type:cc.SpriteFrame},
+    distance: 0,
 
     // from joystick
     moveDir: {
@@ -55,6 +56,7 @@ cc.Class({
         JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_MOVE, this.onTouchMove, this);
         JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_END, this.onTouchEnd, this);
 
+        this.distance = 24;
         var collider = cc.director.getCollisionManager();
         collider.enabled = true;
         // collider.enabledDebugDraw = true;
@@ -94,14 +96,14 @@ cc.Class({
         this.goalY = Math.floor(15*Math.random());
         //设置贪吃蛇头部
          this.snakeHead = cc.instantiate(this.rect7).getComponent('rect');
-         this.snakeHead.node.x=240;
-         this.snakeHead.node.y=336;
+         this.snakeHead.node.x=240 + this.distance;
+         this.snakeHead.node.y=336 + this.distance;
          this.snakeHead.node.Group = 'hero';
 
          var box=cc.find('Canvas/box');
          box.addChild(this.snakeHead.node);
-         this.snakeArrX[0]=this.snakeHead.node.x;
-         this.snakeArrY[0]=this.snakeHead.node.y;
+         this.snakeArrX[0]=this.snakeHead.node.x - this.distance; 
+         this.snakeArrY[0]=this.snakeHead.node.y - this.distance;
          this.snakeArr[0] = this.snakeHead;
          //地图
          this.boxMap=[];
@@ -253,8 +255,8 @@ cc.Class({
     },
     //吃到果实
     eatFoot(){
-         var boxMapX = this.snakeHead.node.x/48;
-         var boxMapY = this.snakeHead.node.y/48;
+         var boxMapX = (this.snakeHead.node.x - this.distance)/48;
+         var boxMapY = (this.snakeHead.node.y - this.distance)/48;
         //判断是否位置是否有果实
         if(this.boxMap[boxMapX][boxMapY]===1){
             //cc.log("位置有果实");
@@ -289,9 +291,12 @@ cc.Class({
     //移动方法
     move (){
         //方向,up-0,down-1,left-2,right-3
+        var headX = this.snakeHead.node.x - this.distance;
+        var headY = this.snakeHead.node.y - this.distance;
+
         if(this.direction===0){
             //移动前，判断游戏是否结束
-            this.isGameOver(this.snakeHead.node.x,this.snakeHead.node.y+48);
+            this.isGameOver(headX,headY+48);
             if(this.gameState===1){
                 this.snakeHead.node.y+=48; 
                 this.snakeHead.node.rotation = 0;
@@ -299,7 +304,7 @@ cc.Class({
             //cc.log("up");
         }else if(this.direction===1){
             //移动前，判断游戏是否结束
-            this.isGameOver(this.snakeHead.node.x,this.snakeHead.node.y-48);
+            this.isGameOver(headX,headY-48);
                
             if(this.gameState===1){
                 this.snakeHead.node.y-=48;
@@ -307,7 +312,7 @@ cc.Class({
             }
            // cc.log("down");
         }else if(this.direction===2){
-            this.isGameOver(this.snakeHead.node.x-48,this.snakeHead.node.y);
+            this.isGameOver(headX-48,headY);
             
             if(this.gameState===1){
                 this.snakeHead.node.x-=48;
@@ -316,7 +321,7 @@ cc.Class({
             //cc.log("left");
         }else if(this.direction===3){
             //移动前，判断游戏是否结束
-            this.isGameOver(this.snakeHead.node.x+48,this.snakeHead.node.y);
+            this.isGameOver(headX+48,headY);
              
             if(this.gameState===1){
                 this.snakeHead.node.x+=48;
@@ -336,8 +341,8 @@ cc.Class({
             this.snakeArrY[i]=this.snakeArrY[i-1];
         }
         //更新贪吃蛇头部位置,贪吃蛇随头部移动
-        this.snakeArrX[0]=this.snakeHead.node.x;
-        this.snakeArrY[0]=this.snakeHead.node.y;
+        this.snakeArrX[0]=this.snakeHead.node.x - this.distance;
+        this.snakeArrY[0]=this.snakeHead.node.y - this.distance;
         for(let j=1;j<this.snakeArrX.length;j++){
             this.snakeArr[j].node.x=this.snakeArrX[j];
             this.snakeArr[j].node.y=this.snakeArrY[j];

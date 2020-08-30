@@ -119,6 +119,13 @@ cc.Class({
                 this.boxMap[i][j]=0;
             }
          }
+
+         for(let i=0; i<this.nodes.length; i++){
+            if(this.nodes[i].Group != 'target'){
+                this.boxMap[Math.round(this.nodes[i].x / 48)][Math.round(this.nodes[i].y / 48)]=1;
+            } 
+        }
+
         //注册按下监听
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
        //this.ontouchmove();

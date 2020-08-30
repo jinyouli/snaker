@@ -120,6 +120,12 @@ cc.Class({
       for (var j = 0; j < 10; j++) {
         this.boxMap[i][j] = 0;
       }
+    }
+
+    for (var _i = 0; _i < this.nodes.length; _i++) {
+      if (this.nodes[_i].Group != 'target') {
+        this.boxMap[Math.round(this.nodes[_i].x / 48)][Math.round(this.nodes[_i].y / 48)] = 1;
+      }
     } //注册按下监听
 
 
@@ -429,8 +435,8 @@ cc.Class({
     } //判断是否碰撞到贪吃蛇身体
 
 
-    for (var _i = 0; _i < this.snakeArrX.length; _i++) {
-      if (this.snakeArrX[_i] == x && this.snakeArrY[_i] == y) {
+    for (var _i2 = 0; _i2 < this.snakeArrX.length; _i2++) {
+      if (this.snakeArrX[_i2] == x && this.snakeArrY[_i2] == y) {
         this.gameOver();
         return;
       }

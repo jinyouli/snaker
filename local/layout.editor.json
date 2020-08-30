@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 0,
-      "y": 24,
+      "x": 26,
+      "y": 23,
       "width": 1280,
-      "height": 728,
+      "height": 732,
       "layout": {
         "children": [
           {
@@ -20,7 +20,7 @@
                     "children": [
                       "hierarchy"
                     ],
-                    "height": 320,
+                    "height": 321,
                     "type": "panel",
                     "width": 304
                   },
@@ -29,12 +29,12 @@
                     "children": [
                       "assets"
                     ],
-                    "height": 324,
+                    "height": 326,
                     "type": "panel",
                     "width": 304
                   }
                 ],
-                "height": 647,
+                "height": 650,
                 "type": "dock-v",
                 "width": 304
               },
@@ -43,7 +43,7 @@
                 "children": [
                   "scene"
                 ],
-                "height": 647,
+                "height": 650,
                 "type": "panel",
                 "width": 602
               },
@@ -53,12 +53,12 @@
                   "inspector",
                   "builder"
                 ],
-                "height": 647,
+                "height": 650,
                 "type": "panel",
                 "width": 368
               }
             ],
-            "height": 647,
+            "height": 650,
             "type": "dock-h",
             "width": 1280
           }
@@ -71,32 +71,6 @@
         "scene",
         "inspector",
         "builder"
-      ]
-    },
-    "window-1598674446756": {
-      "main": false,
-      "url": "unpack://static/window.html",
-      "windowType": "dockable",
-      "x": 0,
-      "y": 238,
-      "width": 1280,
-      "height": 324,
-      "layout": {
-        "children": [
-          {
-            "active": 0,
-            "children": [
-              "console"
-            ],
-            "height": 302,
-            "type": "panel",
-            "width": 1280
-          }
-        ],
-        "type": "dock-v"
-      },
-      "panels": [
-        "console"
       ]
     }
   },
@@ -127,9 +101,9 @@
     },
     "console": {
       "x": 0,
-      "y": 238,
+      "y": 154,
       "width": 1280,
-      "height": 324
+      "height": 493
     },
     "timeline": {
       "x": 440,

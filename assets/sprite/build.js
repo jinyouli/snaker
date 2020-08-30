@@ -7,16 +7,9 @@ cc.Class({
 
     properties: {
         rect0:cc.Prefab,
-        rect1:cc.Prefab,
-        rect2:cc.Prefab,
-        rect3:cc.Prefab,
         rect4:cc.Prefab,
         rect5:cc.Prefab,
-        rect6:cc.Prefab,
         rect7:cc.Prefab,
-
-    cba:{default:null,type:cc.SpriteFrame},
-    distance: 0,
 
     // from joystick
     moveDir: {
@@ -34,18 +27,27 @@ cc.Class({
        player:cc.Prefab,
        basepoint:cc.Prefab,
        //按钮节点
-       button:cc.Label,
+       button:cc.Node,
        score:cc.Label,
        over:cc.Node,
        //速度调节滑动
        sliderv:cc.Slider,
        //音频
        audio:cc.AudioClip,
+       onSprite: {
+            default: null,
+            type: cc.SpriteFrame
+        },
 
-       subNodesArr:{
-            default:[],
-            type:cc.Prefab,
-       }
+        offSprite: {
+            default: null,
+            type: cc.SpriteFrame
+        },
+
+    //    subNodesArr:{
+    //         default:[],
+    //         type:cc.Prefab,
+    //    }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -83,7 +85,7 @@ cc.Class({
         this.leftX;
         this.rightX;
         //速度
-        this.speed=0.5;
+        this.speed=0.4;
         //方向,up-0,down-1,left-2,right-3
         this.direction = 0;
         //贪吃蛇数组,二位数组
@@ -91,25 +93,29 @@ cc.Class({
         this.snakeArrY=[];
         this.snakeArr=[];
         //地图上随机生成果实(x,y)坐标
-        this.nextGoal = Math.floor(7*Math.random());
-        this.goalX = Math.floor(10*Math.random());
-        this.goalY = Math.floor(15*Math.random());
+        //this.nextGoal = Math.floor(7*Math.random());
+        this.nextGoal = 4;
+        this.goalX = Math.floor(15*Math.random());
+        this.goalY = Math.floor(10*Math.random());
         //设置贪吃蛇头部
          this.snakeHead = cc.instantiate(this.rect7).getComponent('rect');
-         this.snakeHead.node.x=240 + this.distance;
-         this.snakeHead.node.y=336 + this.distance;
+         this.snakeHead.node.x=336 + this.distance;
+         this.snakeHead.node.y=240 + this.distance;
          this.snakeHead.node.Group = 'hero';
 
          var box=cc.find('Canvas/box');
          box.addChild(this.snakeHead.node);
-         this.snakeArrX[0]=this.snakeHead.node.x - this.distance; 
-         this.snakeArrY[0]=this.snakeHead.node.y - this.distance;
+         var X = this.snakeHead.node.x;
+         var Y = this.snakeHead.node.y;
+
+         this.snakeArrX[0]=X - this.distance; 
+         this.snakeArrY[0]=Y - this.distance;
          this.snakeArr[0] = this.snakeHead;
          //地图
          this.boxMap=[];
-         for(let i=0;i<10;i++){
+         for(let i=0;i<15;i++){
             this.boxMap[i]=[];
-            for(let j=0;j<15;j++){
+            for(let j=0;j<10;j++){
                 this.boxMap[i][j]=0;
             }
          }
@@ -210,8 +216,8 @@ cc.Class({
     },
     //检测果实生成位置是否重叠贪吃蛇
     overlapFoot(){
-        this.goalX = Math.floor(10*Math.random());
-        this.goalY = Math.floor(15*Math.random());
+        this.goalX = Math.floor(15*Math.random());
+        this.goalY = Math.floor(10*Math.random());
         //判断贪吃蛇所有部位是否重叠
         for(let j=0;j<this.snakeArrX.length;j++){
             if(this.boxMap[this.goalX][this.goalY]===1){
@@ -231,18 +237,18 @@ cc.Class({
     },
     //生成果实
     produceFoot(){
-        this.nextGoal = Math.floor(7*Math.random());
+        //this.nextGoal = Math.floor(7*Math.random());
         this.nextGoal = 4;
         //随机生成某种颜色
-         if(this.nextGoal===0){this.prefab=this.rect0;}
-         if(this.nextGoal===1){this.prefab=this.rect1;}
-         if(this.nextGoal===2){this.prefab=this.rect2;}
-         if(this.nextGoal===3){this.prefab=this.rect3;}
-         if(this.nextGoal===4){this.prefab=this.rect4;}
-         if(this.nextGoal===5){this.prefab=this.rect5;}
-         if(this.nextGoal===6){this.prefab=this.rect6;}
+        //  if(this.nextGoal===0){this.prefab=this.rect0;}
+        //  if(this.nextGoal===1){this.prefab=this.rect1;}
+        //  if(this.nextGoal===2){this.prefab=this.rect2;}
+        //  if(this.nextGoal===3){this.prefab=this.rect3;}
+        //  if(this.nextGoal===4){this.prefab=this.rect4;}
+        //  if(this.nextGoal===5){this.prefab=this.rect5;}
+        //  if(this.nextGoal===6){this.prefab=this.rect6;}
         //贪吃蛇身体
-         this.snakeBody = cc.instantiate(this.prefab).getComponent('rect');
+         this.snakeBody = cc.instantiate(this.rect4).getComponent('rect');
          this.snakeBody.node.Group = 'target';
          var box=cc.find('Canvas/box');
          box.addChild(this.snakeBody.node);
@@ -255,8 +261,17 @@ cc.Class({
     },
     //吃到果实
     eatFoot(){
-         var boxMapX = (this.snakeHead.node.x - this.distance)/48;
-         var boxMapY = (this.snakeHead.node.y - this.distance)/48;
+        var headX = this.snakeHead.node.x;
+        var headY = this.snakeHead.node.y;
+        cc.log("headX =" + headX + "   headY =" + headY);
+
+         var X = (headX - this.distance)/48;
+         var Y = (headY - this.distance)/48;
+         var boxMapX = Math.round(X);
+         var boxMapY = Math.round(Y);
+
+         cc.log("boxMapX =" + boxMapX);
+         cc.log("boxMapY =" + boxMapY);
         //判断是否位置是否有果实
         if(this.boxMap[boxMapX][boxMapY]===1){
             //cc.log("位置有果实");
@@ -279,20 +294,25 @@ cc.Class({
     //加分数
     addScore(){
         //根据不同果实增加分数
-        if(this.nextGoal===0){this.scoreNum+=50;}
-        if(this.nextGoal===1){this.scoreNum+=100;}
-        if(this.nextGoal===2){this.scoreNum+=200;}
-        if(this.nextGoal===3){this.scoreNum+=300;}
-        if(this.nextGoal===4){this.scoreNum+=400;}
-        if(this.nextGoal===5){this.scoreNum+=500;}
-        if(this.nextGoal===6){this.scoreNum+=600;}
+        // if(this.nextGoal===0){this.scoreNum+=50;}
+        // if(this.nextGoal===1){this.scoreNum+=100;}
+        // if(this.nextGoal===2){this.scoreNum+=200;}
+        // if(this.nextGoal===3){this.scoreNum+=300;}
+        // if(this.nextGoal===4){this.scoreNum+=400;}
+        // if(this.nextGoal===5){this.scoreNum+=500;}
+        // if(this.nextGoal===6){this.scoreNum+=600;}
+        this.scoreNum+=10;
         this.score.string=this.scoreNum;
     },
     //移动方法
     move (){
         //方向,up-0,down-1,left-2,right-3
-        var headX = this.snakeHead.node.x - this.distance;
-        var headY = this.snakeHead.node.y - this.distance;
+
+        var X = this.snakeHead.node.x;
+        var Y = this.snakeHead.node.y;
+        var headX = Math.round(X - this.distance);
+        var headY = Math.round(Y - this.distance);
+        //cc.log("headX =" + headX + "  headY =" + headY);
 
         if(this.direction===0){
             //移动前，判断游戏是否结束
@@ -301,7 +321,7 @@ cc.Class({
                 this.snakeHead.node.y+=48; 
                 this.snakeHead.node.rotation = 0;
             }
-            //cc.log("up");
+            cc.log("up");
         }else if(this.direction===1){
             //移动前，判断游戏是否结束
             this.isGameOver(headX,headY-48);
@@ -310,7 +330,7 @@ cc.Class({
                 this.snakeHead.node.y-=48;
                 this.snakeHead.node.rotation = 180;
             }
-           // cc.log("down");
+            cc.log("down");
         }else if(this.direction===2){
             this.isGameOver(headX-48,headY);
             
@@ -318,7 +338,7 @@ cc.Class({
                 this.snakeHead.node.x-=48;
                 this.snakeHead.node.rotation = 270;
             }
-            //cc.log("left");
+            cc.log("left");
         }else if(this.direction===3){
             //移动前，判断游戏是否结束
             this.isGameOver(headX+48,headY);
@@ -327,7 +347,7 @@ cc.Class({
                 this.snakeHead.node.x+=48;
                 this.snakeHead.node.rotation = 90;
             }
-            //cc.log("right");
+            cc.log("right");
         }
         if(this.gameState===1){
             this.eatFoot();
@@ -336,18 +356,21 @@ cc.Class({
     },
     //移动的时候，身体也向头移动
     moveAll(){
+        var X = this.snakeHead.node.x;
+        var Y = this.snakeHead.node.y;
+
         for(let i=this.snakeArrX.length-1;i>0;i--){
             this.snakeArrX[i]=this.snakeArrX[i-1];
             this.snakeArrY[i]=this.snakeArrY[i-1];
         }
         //更新贪吃蛇头部位置,贪吃蛇随头部移动
-        this.snakeArrX[0]=this.snakeHead.node.x - this.distance;
-        this.snakeArrY[0]=this.snakeHead.node.y - this.distance;
+        this.snakeArrX[0]=X - this.distance;
+        this.snakeArrY[0]=Y - this.distance;
+
         for(let j=1;j<this.snakeArrX.length;j++){
             this.snakeArr[j].node.x=this.snakeArrX[j];
             this.snakeArr[j].node.y=this.snakeArrY[j];
         }
-        //cc.log("moveAll"+this.snakeArrX.length);
     },
 
     onCollisionEnter(other, self) {
@@ -390,14 +413,13 @@ cc.Class({
     //判断游戏结束的条件
     isGameOver(x,y){
          //判断是否超出地图
-        if(x<0 || x>=480 || y<0 || y>=720){
+
+        if(y<0 || y>=480 || x<0 || x>=720){
             this.gameOver();
             return;
         }
 
         for(let i=0; i<this.nodes.length; i++){
-            cc.log("nodes =" + this.nodes[i]);
-
             if(this.nodes[i].Group != 'target'){
                 if(this.nodes[i].x==x && this.nodes[i].y==y){
                     this.gameOver();
@@ -433,14 +455,20 @@ cc.Class({
         if(this.gameState!==2){
             if(this.gameState===1){
                 this.gameState=0;
-                this.button.string = "Play";
+                //this.button.string = "Play";
+
+                let sprite = this.button.getComponent(cc.Sprite)
+                sprite.spriteFrame = this.onSprite; 
                 //停止移动
                 this.unschedule(this.move);
             }else if(this.gameState===0){
                 this.gameState=1;
-                this.button.string = "Pause";
+                //this.button.string = "Pause";
                 //停止移动
                 this.schedule(this.move,this.speed);
+
+                let sprite = this.button.getComponent(cc.Sprite)
+                sprite.spriteFrame = this.offSprite; 
             }
         }
     },

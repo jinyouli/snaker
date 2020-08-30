@@ -2333,3 +2333,4 @@ libpng warning: iCCP: known incorrect sRGB profile
 2020-08-30T23:27:01.545Z - normal: Simulator: Function object is released!
 2020-08-30T23:27:01.545Z - normal: Simulator: GC end ..., (js->native map) size: 0, all objects: -1
 2020-08-30T23:27:01.562Z - normal: Simulator: ScriptEngine::cleanup end ...
+2020-08-30T23:30:01.553Z - info: shutdown preview server

@@ -47,6 +47,10 @@ cc.Class({
     offSprite: {
       "default": null,
       type: cc.SpriteFrame
+    },
+    bodySprite: {
+      "default": null,
+      type: cc.SpriteFrame
     } //    subNodesArr:{
     //         default:[],
     //         type:cc.Prefab,
@@ -56,6 +60,7 @@ cc.Class({
   // LIFE-CYCLE CALLBACKS:
   onLoad: function onLoad() {
     cc.log("onload start");
+    this.isFood = false;
 
     _JoystickEvent["default"].getInstance().on(_JoystickEnum["default"].JoystickEventType.TOUCH_START, this.onTouchStart, this);
 
@@ -237,7 +242,11 @@ cc.Class({
   },
   //生成果实
   produceFoot: function produceFoot() {
-    //this.nextGoal = Math.floor(7*Math.random());
+    if (this.isFood) {
+      return;
+    } //this.nextGoal = Math.floor(7*Math.random());
+
+
     this.nextGoal = 4; //随机生成某种颜色
     //  if(this.nextGoal===0){this.prefab=this.rect0;}
     //  if(this.nextGoal===1){this.prefab=this.rect1;}
@@ -252,6 +261,7 @@ cc.Class({
     this.snakeBody.node.Group = 'target';
     var box = cc.find('Canvas/box');
     box.addChild(this.snakeBody.node);
+    this.isFood = true;
     this.snakeBody.node.x = this.goalX * 48;
     this.snakeBody.node.y = this.goalY * 48; //记录地图这里已经有果实
 
@@ -279,6 +289,8 @@ cc.Class({
       this.snakeArrY[len] = this.snakeBody.node.y; // let sprite = this.snakeBody.getComponent(cc.Sprite)
       // sprite.spriteFrame = new cc.SpriteFrame(cc.url.raw('assets/img/5.png'));
 
+      var sprite = this.snakeBody.getComponent(cc.Sprite);
+      sprite.spriteFrame = this.bodySprite;
       this.snakeArr[len] = this.snakeBody; //果实被吃了 
 
       this.boxMap[boxMapX][boxMapY] = 0; //加分数
@@ -300,6 +312,7 @@ cc.Class({
     // if(this.nextGoal===6){this.scoreNum+=600;}
     this.scoreNum += 10;
     this.score.string = this.scoreNum;
+    this.isFood = false;
   },
   //移动方法
   move: function move() {
@@ -366,8 +379,10 @@ cc.Class({
     } //更新贪吃蛇头部位置,贪吃蛇随头部移动
 
 
-    this.snakeArrX[0] = X - this.distance;
-    this.snakeArrY[0] = Y - this.distance;
+    var headX = Math.round(X - this.distance);
+    var headY = Math.round(Y - this.distance);
+    this.snakeArrX[0] = headX;
+    this.snakeArrY[0] = headY;
 
     for (var j = 1; j < this.snakeArrX.length; j++) {
       this.snakeArr[j].node.x = this.snakeArrX[j];
@@ -436,6 +451,9 @@ cc.Class({
 
 
     for (var _i2 = 0; _i2 < this.snakeArrX.length; _i2++) {
+      cc.log("this.snakeArrX[i]  =" + this.snakeArrX[_i2] + " x=" + x);
+      cc.log("this.snakeArrY[i]  =" + this.snakeArrY[_i2] + " y=" + y);
+
       if (this.snakeArrX[_i2] == x && this.snakeArrY[_i2] == y) {
         this.gameOver();
         return;

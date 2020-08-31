@@ -44,6 +44,11 @@ cc.Class({
             type: cc.SpriteFrame
         },
 
+        bodySprite: {
+            default: null,
+            type: cc.SpriteFrame
+        },
+
     //    subNodesArr:{
     //         default:[],
     //         type:cc.Prefab,
@@ -53,6 +58,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
     onLoad () {
         cc.log("onload start");
+        this.isFood = false;
 
         JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_START, this.onTouchStart, this);
         JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_MOVE, this.onTouchMove, this);
@@ -215,7 +221,8 @@ cc.Class({
     //获取颜色后实例化6种图像,还有一个种作为head
     buildBody(goal){
         cc.log("goal:"+goal);
-         this.produceFoot();
+        this.produceFoot();
+         
          //移动
          this.schedule(this.move,this.speed);
          cc.log("goal2:"+goal);
@@ -244,6 +251,10 @@ cc.Class({
     },
     //生成果实
     produceFoot(){
+        if(this.isFood){
+            return;
+        }
+
         //this.nextGoal = Math.floor(7*Math.random());
         this.nextGoal = 4;
         //随机生成某种颜色
@@ -259,6 +270,8 @@ cc.Class({
          this.snakeBody.node.Group = 'target';
          var box=cc.find('Canvas/box');
          box.addChild(this.snakeBody.node);
+         this.isFood = true;
+
          this.snakeBody.node.x=this.goalX*48;       
          this.snakeBody.node.y=this.goalY*48;
          //记录地图这里已经有果实
@@ -289,6 +302,9 @@ cc.Class({
             
             // let sprite = this.snakeBody.getComponent(cc.Sprite)
             // sprite.spriteFrame = new cc.SpriteFrame(cc.url.raw('assets/img/5.png'));
+            let sprite = this.snakeBody.getComponent(cc.Sprite)
+            sprite.spriteFrame = this.bodySprite;
+
             this.snakeArr[len]=this.snakeBody;
             //果实被吃了 
             this.boxMap[boxMapX][boxMapY]=0;
@@ -310,6 +326,7 @@ cc.Class({
         // if(this.nextGoal===6){this.scoreNum+=600;}
         this.scoreNum+=10;
         this.score.string=this.scoreNum;
+        this.isFood = false;
     },
     //移动方法
     move (){
@@ -371,8 +388,11 @@ cc.Class({
             this.snakeArrY[i]=this.snakeArrY[i-1];
         }
         //更新贪吃蛇头部位置,贪吃蛇随头部移动
-        this.snakeArrX[0]=X - this.distance;
-        this.snakeArrY[0]=Y - this.distance;
+
+        var headX = Math.round(X - this.distance);
+        var headY = Math.round(Y - this.distance);
+        this.snakeArrX[0]=headX;
+        this.snakeArrY[0]=headY;
 
         for(let j=1;j<this.snakeArrX.length;j++){
             this.snakeArr[j].node.x=this.snakeArrX[j];
@@ -437,6 +457,9 @@ cc.Class({
 
         //判断是否碰撞到贪吃蛇身体
         for(let i=0;i<this.snakeArrX.length;i++){
+            cc.log("this.snakeArrX[i]  =" + this.snakeArrX[i] + " x=" + x);
+            cc.log("this.snakeArrY[i]  =" + this.snakeArrY[i] + " y=" + y);
+
             if(this.snakeArrX[i]==x && this.snakeArrY[i]==y){
                 this.gameOver();
                 return;

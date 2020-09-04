@@ -260,14 +260,17 @@ cc.Class({
     this.snakeBody = cc.instantiate(this.rect4).getComponent('rect');
     this.snakeBody.node.Group = 'target';
     var box = cc.find('Canvas/box');
-    box.addChild(this.snakeBody.node);
-    this.isFood = true;
     this.snakeBody.node.x = this.goalX * 48;
     this.snakeBody.node.y = this.goalY * 48; //记录地图这里已经有果实
 
     var boxMapX = this.snakeBody.node.x / 48;
     var boxMapY = this.snakeBody.node.y / 48;
-    this.boxMap[boxMapX][boxMapY] = 1;
+
+    if (this.boxMap[boxMapX][boxMapY] != 1) {
+      this.boxMap[boxMapX][boxMapY] = 1;
+      box.addChild(this.snakeBody.node);
+      this.isFood = true;
+    }
   },
   //吃到果实
   eatFoot: function eatFoot() {
@@ -310,7 +313,7 @@ cc.Class({
     // if(this.nextGoal===4){this.scoreNum+=400;}
     // if(this.nextGoal===5){this.scoreNum+=500;}
     // if(this.nextGoal===6){this.scoreNum+=600;}
-    this.scoreNum += 10;
+    this.scoreNum += 1;
     this.score.string = this.scoreNum;
     this.isFood = false;
   },
